@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+
+<Package
+  xmlns="http://schemas.microsoft.com/appx/manifest/foundation/windows10"
+  xmlns:mp="http://schemas.microsoft.com/appx/2014/phone/manifest"
+  xmlns:uap="http://schemas.microsoft.com/appx/manifest/uap/windows10"
+  IgnorableNamespaces="uap mp">
+
+  <Identity
+    Name="a5cb7b75-84ff-4de3-91cc-1228d4c6a6cb"
+    Publisher="CN=Diederik"
+    Version="1.0.0.0" />
+
+  <mp:PhoneIdentity PhoneProductId="a5cb7b75-84ff-4de3-91cc-1228d4c6a6cb" PhonePublisherId="00000000-0000-0000-0000-000000000000"/>
+
+  <Properties>
+    <DisplayName>XamlBrewer.Uwp.RelativePanelSample</DisplayName>
+    <PublisherDisplayName>Diederik</PublisherDisplayName>
+    <Logo>Assets\StoreLogo.png</Logo>
+  </Properties>
+
+  <Dependencies>
+    <TargetDeviceFamily Name="Windows.Universal" MinVersion="10.0.10069.0" MaxVersionTested="10.0.10069.0" />
+  </Dependencies>
+
+  <Resources>
+    <Resource Language="x-generate"/>
+  </Resources>
+
+  <Applications>
+    <Application Id="App"
+      Executable="$targetnametoken$.exe"
+      EntryPoint="XamlBrewer.Uwp.RelativePanelSample.App">
+      <uap:VisualElements
+        DisplayName="XAML Brewer UWP Relative Panel Sample"
+        Square150x150Logo="Assets\Logo.png"
+        Square44x44Logo="Assets\SmallLogo.png"
+        Description="XamlBrewer.Uwp.RelativePanelSample"
+        BackgroundColor="lightSlateGray">
+        <uap:SplashScreen Image="Assets\SplashScreen.png" />
+      </uap:VisualElements>
+    </Application>
+  </Applications>
+</Package>
